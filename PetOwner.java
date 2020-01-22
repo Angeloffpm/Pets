@@ -14,7 +14,7 @@ public class PetOwner {
     // Functions
     public boolean isHappy() {
 
-        if (this.dog.isHappy() && this.cat.isHappy()) {
+        if (this.dog.isHappy() && this.cat.happyCat()) {
             return true;
         } else {
             return false;

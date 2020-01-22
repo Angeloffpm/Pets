@@ -13,7 +13,7 @@ public class Cat {
     }
 
     //functions
-    public boolean HappyCat(boolean fed,boolean walked,boolean petted){
+    public boolean happyCat(){
         if(fed && !walked && !petted){
             return true;
         }
@@ -28,8 +28,8 @@ public class Cat {
         return "HISSS";
     }
 
-     // Setters (Pet Owner interactions)
-     public void feed() {
+    // Setters (Pet Owner interactions)
+    public void feed() {
         this.fed = true;
     }
 
