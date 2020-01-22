@@ -7,6 +7,8 @@ public class Pets {
 
         PetOwner pierce = new PetOwner(louie, kenya);
 
+        System.out.println(louie.bark());
+
     }
 
 }

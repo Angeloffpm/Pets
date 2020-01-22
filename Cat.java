@@ -1,19 +1,12 @@
-public class Cat {
-
-    private boolean fed;
-    private boolean walked;
-    private boolean petted;
+public class Cat extends Pet {
 
     //constructor
-
-    public Cat(boolean fed, boolean walked, boolean petted){
-        this.fed = fed;
-        this.walked = walked;
-        this.petted = petted;
+    public Cat(String name){
+        super(name);
     }
 
     //functions
-    public boolean happyCat(){
+    public boolean isHappy(){
         if(fed && !walked && !petted){
             return true;
         }
@@ -28,18 +21,6 @@ public class Cat {
         return "HISSS";
     }
 
-    // Setters (Pet Owner interactions)
-    public void feed() {
-        this.fed = true;
-    }
-
-    public void walk() {
-        this.walked = true;
-    }
-    
-    public void pet() {
-        this.petted = true;
-    }
-
-
 }
+
+    

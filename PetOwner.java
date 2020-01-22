@@ -1,14 +1,9 @@
 public class PetOwner {
 
-    private Dog dog;
-    private Cat cat;
-
+    private Pet[] pets;
     // Constructor
-    public PetOwner(Dog dog, Cat cat) {
-        
-        this.dog = dog;
-        this.cat = cat;
-
+    public PetOwner(Pet[] pets) {
+        this.pets = pets;
     }
 
     // Functions
