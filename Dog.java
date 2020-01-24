@@ -7,7 +7,7 @@ public class Dog extends Pet {
 
     // Functions
 
-    public String bark() {
+    public String speak() {
     
         if (isHappy()) {
             return "WOOF!";
@@ -15,6 +15,10 @@ public class Dog extends Pet {
             return "woof";
         }
 
+    }
+
+    public void pet() {
+        super.pet();
     }
 
 }

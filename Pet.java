@@ -2,9 +2,9 @@ public class Pet {
 
     private String name;
 
+    private boolean hasBeenFed;
     private boolean hasBeenWalked;
     private boolean hasBeenPetted;
-    private boolean hasBeenFed;
 
     // Constructor
     public Pet(String name) {
@@ -13,7 +13,7 @@ public class Pet {
 
     // Setters
     public void feed() {
-        this.hasBeedFed = true;
+        this.hasBeenFed = true;
     }
 
     public void walk() {
@@ -24,9 +24,26 @@ public class Pet {
         this.hasBeenPetted = true;
     }
 
+    // Getters
+    public boolean hasBeenWalked() {
+        return this.hasBeenWalked;
+    }
+
+    public boolean hasBeenPetted() {
+        return this.hasBeenPetted;
+    }
+
+    public boolean hasBeenFed() {
+        return this.hasBeenFed;
+    }
+
     // Functions
     public boolean isHappy() {
-        return fed && walked && petted;
+        return hasBeenFed && hasBeenWalked && hasBeenPetted;
+    }
+
+    public String speak() {
+        return "Hello!";
     }
 
 }

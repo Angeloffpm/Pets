@@ -1,6 +1,7 @@
 public class PetOwner {
 
     private Pet[] pets;
+
     // Constructor
     public PetOwner(Pet[] pets) {
         this.pets = pets;
@@ -9,11 +10,13 @@ public class PetOwner {
     // Functions
     public boolean isHappy() {
 
-        if (this.dog.isHappy() && this.cat.happyCat()) {
-            return true;
-        } else {
-            return false;
+        boolean happy = true;
+
+        for (int i = 0; i < pets.length; i++) {
+            if (!pets[i].isHappy()) happy = false;
         }
+
+        return happy;
 
     }
 

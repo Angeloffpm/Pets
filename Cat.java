@@ -7,18 +7,15 @@ public class Cat extends Pet {
 
     //functions
     public boolean isHappy(){
-        if(fed && !walked && !petted){
+        if(hasBeenFed() && !hasBeenWalked() && !hasBeenPetted()){
             return true;
         }
         return false;
     }
 
 
-    public String hissOrMeow(boolean HappyCat){
-        if(HappyCat){
-            return "Meow";
-        }
-        return "HISSS";
+    public String speak(){
+        return isHappy() ? "Meow" : "HISSS";
     }
 
 }
