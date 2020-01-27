@@ -6,6 +6,11 @@ public class Pets {
         System.out.println(garfield.speak());
         System.out.println(garfield.speak());
         System.out.println(garfield.speak());
+        garfield.feed();
+        System.out.println(garfield.speak());
+        System.out.println(garfield.speak());
+
+        Dog odie = new Dog("Odie");
 
     }
 

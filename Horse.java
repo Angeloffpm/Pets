@@ -1,4 +1,4 @@
-public class Horse extends Pets {
+public class Horse extends Pet {
 
     private boolean hasBeenBrushed;
     private boolean hasBeenRidden;
@@ -19,7 +19,7 @@ public class Horse extends Pets {
 
     // Functions
     public boolean isHappy() {
-        return (super.isHappy() && hasBeenBrushed && hasBeenRidden) ? true : false;
+        return (super.isHappy() && hasBeenBrushed && hasBeenRidden);
     }
 
 }
